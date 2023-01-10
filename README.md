@@ -1,8 +1,8 @@
 -----------------------------------------------------------------------------------------------------------------------------
 My Raylib Functions
 ----------------------------------------------------------------------------------------------------------------------------
-Standalone header,  
-My Raylib Functions is a collection of my personal c++ and raylib functions.
+ Standalone header,  
+ My Raylib Functions is a collection of my personal c++ and raylib functions.
 
  Alejandro Ricciardi (Omegapy)  
  created date: 01/09/2023  
@@ -11,9 +11,10 @@ My Raylib Functions is a collection of my personal c++ and raylib functions.
 -----------------------------------------------------------------------------------------------------------------------------
 Requirements:
 
-c and c++ 20 or later  
-MS Windows 10 or later   
-Raylib library: https://www.raylib.com
+![C++ Raylib Raygui](https://user-images.githubusercontent.com/121726699/211566602-45931973-2ef2-48ba-ae38-393425eead02.PNG)
+
+ c and c++ 20 or later   
+ Raylib library: https://www.raylib.com
 
 -----------------------------------------------------------------------------------------------------------------------------
 Project description:  
@@ -28,6 +29,6 @@ void pause_screen(int pause_key);
 -----------------------------------------------------------------------------------------------------------------------------
 
 Links:  
-https://github.com/Omegapy  
-YouTube: https://www.youtube.com/@omegapy (new)
+ https://github.com/Omegapy  
+ YouTube: https://www.youtube.com/@omegapy (new)
 
