@@ -20,10 +20,15 @@ Requirements:
 Project description:  
 A collection of my personal c++ and raylib functions
 
-
--- Pauses the screen, the game --
+ 
 ```cpp
+// Pauses the screen, the game
 void pause_screen(int pause_key);
+```
+
+```cpp
+// Centers window in current monitor
+void center_window(float window_width, float window_height);
 ```
 
 -----------------------------------------------------------------------------------------------------------------------------
