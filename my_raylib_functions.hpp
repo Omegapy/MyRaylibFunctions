@@ -68,7 +68,14 @@ void pause_screen(int pause_key)
             DrawText(text, GetScreenWidth() / 2 - text_width / 2, GetScreenHeight() / 2 - 30, 60, YELLOW);
             EndDrawing();
 
-            if (IsKeyPressed(pause_key)) break; // exits while loop and function   
+            // Exits Programm
+            if (WindowShouldClose())
+            {
+                CloseWindow();
+                exit(0);
+            }
+
+            else if (IsKeyPressed(pause_key)) break; // exits while loop and function    
         }
     }
 }
