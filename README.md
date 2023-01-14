@@ -31,6 +31,11 @@ void pause_screen(int pause_key);
 void center_window(float window_width, float window_height);
 ```
 
+```cpp
+// Draws a dotted line
+void draw_dotted_line(int start_pos_x, int start_pos_y, int end_pos_x, int end_pos_y, int num_points);
+```
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 Links:  
