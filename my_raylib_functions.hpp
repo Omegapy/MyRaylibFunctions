@@ -88,11 +88,44 @@ void pause_screen(int pause_key)
     Centers window in current monitor
 
  -----------------------------------------------------*/
-
 void center_window(float window_width, float window_height)
 {
     int monitor = GetCurrentMonitor();// Get current connected monitor
     int monitor_width = GetMonitorWidth(monitor); // Get specified monitor width (current video mode used by monitor)
     int monitor_height = GetMonitorHeight(monitor); // Get specified monitor height (current video mode used by monitor)
     SetWindowPosition((int)(monitor_width / 2) - (int)(window_width / 2), (int)(monitor_height / 2) - (int)(window_height / 2));
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//--------------------------------------------------------------------- Function draw_doted_line()
+/*---------------------------------------------------
+
+    Draws a dotted line
+
+ ----------------------------------------------------*/
+void Instance::draw_dotted_line(int start_pos_x, int start_pos_y, int end_pos_x, int end_pos_y, int num_points)
+{
+    //-----------------------------------------------------
+
+    // Variable
+    //-----------------------------------------------------
+    // Lenght of the line relative to the x and y axis
+    double change_x = (end_pos_x - start_pos_x);
+    double change_y = (end_pos_y - start_pos_y);
+    // Points position
+    int point_x = start_pos_x;
+    int point_y = start_pos_y;
+
+    //-----------------------------------------------------
+
+    // Function operations
+    //-----------------------------------------------------
+    // Draw the line using points
+    for (int i = 0; i < num_points + 1; i++)
+    {
+        DrawPixel(point_x, point_y, WHITE);
+        point_x += (int)(change_x / num_points);
+        point_y += (int)(change_y / num_points);
+    }
 }
